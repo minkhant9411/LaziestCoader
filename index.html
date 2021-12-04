@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Laziest Coder</title>
+
+    <link
+      rel="stylesheet"
+      href="./vendors/frameworks/bootstrap-5.1.3-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendors/frameworks/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+  </head>
+  <body class="">
+    <!-- Nav session ---------------------------- -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-md">
+        <a class="navbar-brand" href="#home_section">LzC</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars text-light"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a href="#home_section" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#skill_section" class="nav-link" data-bs-toggle="modal" data-bs-target="#skills"> 
+                skills
+              </a>
+              <!--data-bs-toggle="modal" data-bs-target="#projects"-->
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio_section" class="nav-link" >portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blogs_section" class="nav-link">blogs</a>
+            </li>
+            
+            <li class="nav-item">
+              <a
+                href=""
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- home_section============================================= -->
+    <section id="home_section">
+      <div class="home-section vh-100 row">
+        <div class="col-md-4">&nbsp;</div>
+        <div class="col-md-8 vh-100 position-relative">
+          <div class="hero-text-wapper">
+            <h1>Welcome To LzC!</h1>
+            <p>I can say that I'm the best for you!</p>
+            <a href="#portfolio_section"" class="btn more-btn"
+              ><i class="fas fa-sort-down"></i>More</a
+            >
+            <a href="href="
+            data-bs-toggle="modal"
+            data-bs-target="#signup"class="btn signup-btn">Signup</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section======================================== -->
+    <section id="portfolio_section">
+      <div class="container">
+        <div class="header">
+          <h1>Some templates that you can offer</h1>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-3 col-md-6 p-0">
+            <div class="card m-2 blogs-card">
+              <img
+                src="https://media.istockphoto.com/photos/open-book-with-php-inscription-light-coming-from-open-book-with-word-picture-id1279160923"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">About php</h5>
+                <div class="card-text">
+                  <p>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="row text-center">
+                    <div class="col">
+                      <a href="#">
+                        <i class="fa fa-heart"></i>
+                      </a>
+                    </div>
+
+                    <div class="col">
+                      <a href="#">
+                        <i class="fa fa-share"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs_section============================================== -->
+    <section id="blogs_section">
+      <div class="container">
+        <div class="header">
+          <h1>These are my Blogs</h1>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-3 col-md-6 p-0">
+            <div class="card m-2 blogs-card">
+              <img
+                src="https://media.istockphoto.com/photos/open-book-with-php-inscription-light-coming-from-open-book-with-word-picture-id1279160923"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">About php</h5>
+                <div class="card-text">
+                  <p>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="row text-center">
+                    <div class="col">
+                      <a href="#">
+                        <i class="fa fa-heart"></i>
+                      </a>
+                    </div>
+
+                    <div class="col">
+                      <a href="#">
+                        <i class="fa fa-share"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- <section id="portfolio_section"></section> -->
+
+    
+
+<!-- ================================================================== -->
+
+
+<!-- Modals section -->
+
+
+<!-- ==================================================================== -->
+    <!-- Portfolio modal======================================= -->
+    <div class="modal fade" id="skills" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Skills</h3>
+              <button
+            type="button"
+            class="modal-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >&#10006;</button>
+            </div>
+            <div class="modal-body">
+              <p class="text-green text-center text-uppercase">
+                Under maintainance
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Projects modal under maintainance================================ -->
+    <!--      <div class="modal fade" id="projects" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="exampleModalLabel">Projects</h3>
+                      <button
+                      type="button"
+                      class="modal-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >&#10006;</button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-green text-center text-uppercase">
+                        Under maintainance
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+          </div>  
+          </div> -->
+
+    
+    
+    <!-- Login modal=================================== -->
+    <div class="modal fade"
+      id="login"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+            <button
+              type="button"
+              class="modal-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >&#10006;</button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div>
+                <label class="form-label text-green" for="login_username"">Username</label>
+                <input type="text" class="form-control"id="login_username" placeholder="Username">
+              </div>
+              <div>
+                <label class="form-label text-green" for="login_password">Password</label>
+                <input type="password" class="form-control"  id="login_password" placeholder="Password">
+              </div>
+              <div class="d-flex justify-content-center mt-1">
+                <a href="" class="btn login-btn mb-3">Login</a>
+                
+              </div>
+              <div class="d-flex justify-content-center">
+                <span class="text-green acc-create-text">
+                  Need an account?
+                  <a href="#" 
+                  class="signup-login"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signup">Signup</a>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signup modal======================================= -->
+    <div class="modal fade"
+    id="signup"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Signup</h5>
+          <button
+            type="button"
+            class="modal-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >&#10006;</button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col">
+                    <label class="form-label text-green mb-1" for="signup_fname">First Name</label>
+                    <input type="text" class="form-control" id="signup_fname" placeholder="First name">
+              </div>
+              <div class="col">
+                    <label class="form-label text-green mb-1" for="signup_lname">Last Name</label>
+                    <input type="text" class="form-control" id="signup_lname" placeholder="Last name">
+              </div>
+            </div>
+            <div>
+              <label class="form-label text-green mb-1" for="signup_email">Email</label>
+              <input type="email" class="form-control" id="signup_email" placeholder="email">
+            </div>
+            <div>
+              <label class="form-label text-green mb-1" for="signup_password">Password</label>
+              <input type="password" class="form-control" name="password" id="signup_password" placeholder="Password">
+            </div>
+            <div class="d-flex justify-content-center mt-1">
+              <a href="" class="btn signup-model-btn my-3">Sign up</a>
+              
+            </div>
+            <div class="d-flex justify-content-center">
+              <span class="text-green acc-create-text">
+                Already an account?<a href="#" class="signup-login"
+                data-bs-toggle="modal"
+                data-bs-target="#login">Login</a>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="./vendors/frameworks/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/frameworks/jqurey-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+  </body>
+</html>

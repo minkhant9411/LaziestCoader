@@ -1,0 +1,234 @@
+/* 
+blue
+hsl(209, 30%, 19%)
+hsl(230, 8%, 15%)
+green
+hsl(137, 100%, 45%) */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
+:root {
+  --main-white-color: #fff;
+  --main-dark-color: hsl(220, 25%, 19%);
+  --sec-dark-color: hsl(209, 30%, 19%);
+  --font-green-color: hsl(137, 100%, 45%);
+  --font-dark-color: #555;
+  --main-color: var(--main-dark-color);
+  --main-nav-color: var(--sec-dark-color);
+  --font-own-color: var(--font-green-color);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  overflow-x: hidden;
+  scroll-behavior: initial;
+}
+
+body {
+  background-color: var(--main-color);
+}
+h1 {
+  font-weight: 600;
+}
+
+/* Nav Css --------------------- */
+
+nav.navbar {
+  background-color: var(--main-nav-color);
+  box-shadow: 0 0 5px 0 #555;
+  text-transform: capitalize;
+}
+nav.navbar a {
+  color: var(--font-own-color);
+}
+
+.nav-link {
+  color: hsl(137, 100%, 45%);
+}
+.nav-item a.nav-link,
+.nav-item a.nav-link:visited,
+.nav-item a.nav-link:link {
+  position: relative;
+  color: hsl(137, 100%, 45%);
+}
+
+.nav-item a.nav-link:hover {
+  color: #fff;
+}
+a.nav-link::after {
+  transition: all 0.5s ease;
+  content: "";
+  z-index: 1000;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--font-green-color);
+}
+a.nav-link:hover::after {
+  width: 100%;
+}
+/* Home section====================================== */
+section#home_section {
+  padding-top: 0;
+}
+section {
+  height: 100vh;
+  padding: 5rem 0;
+}
+.home-section {
+  background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-text-wapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+.hero-text-wapper h1 {
+  color: var(--font-own-color);
+  text-shadow: 2px 3px 5px hsl(0, 0%, 0%);
+  font-size: 1.7rem;
+}
+
+.hero-text-wapper p {
+  color: var(--font-own-color);
+  text-shadow: 2px 3px 10px hsl(0, 0%, 0%);
+  font-size: 1rem;
+}
+.header h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--font-own-color);
+  border-bottom: var(--font-own-color) solid 1px;
+}
+.more-btn,
+.signup-btn {
+  border: none;
+  border-radius: 0.5rem;
+}
+.more-btn,
+.login-btn,
+.signup-model-btn,
+.signup-btn:hover {
+  background-color: var(--font-own-color);
+  text-align: center;
+  color: var(--main-color);
+}
+.more-btn i {
+  padding: 2px;
+  transform: translateY(-3px);
+}
+.login-text,
+.text-green {
+  color: var(--font-green-color);
+}
+.signup-btn,
+.more-btn:hover {
+  background-color: var(--main-dark-color);
+  color: var(--font-own-color);
+}
+@media screen and (max-width: 450px) {
+  .hero-text-wapper h1 {
+    font-size: 1.2rem;
+  }
+  .hero-text-wapper p {
+    font-size: 0.7rem;
+  }
+}
+/* blogs-card css=============================== */
+.card {
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.blogs-card {
+  border: none;
+  color: var(--font-own-color);
+}
+.card-img-top {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px 0.5px #000;
+}
+.card-title {
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+}
+.card-body {
+  padding: 0;
+}
+
+.card-text {
+  background-color: hsl(209, 30%, 19%);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px 0.5px #000;
+}
+.card-text p {
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 450px) {
+  h1,
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  .hero-text-wapper p {
+    font-size: 0.7rem;
+  }
+}
+/* model css================================= */
+.modal {
+  width: 100vw;
+  height: 100vh;
+}
+.modal .modal-content {
+  align-content: center;
+  background-color: var(--main-dark-color);
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: 0;
+}
+.modal-title,
+.btn-close {
+  color: var(--font-own-color);
+}
+.signup-login {
+  color: var(--font-green-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.signup-login:hover {
+  text-decoration: underline;
+  color: var(--font-green-color);
+}
+.modal-close {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  color: var(--font-green-color);
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+.modal-close:hover {
+  transform: rotate(90deg);
+  color: hsl(0, 100%, 50%);
+}
+.acc-create-text {
+  font-size: 0.8rem;
+  padding: 5px;
+}
