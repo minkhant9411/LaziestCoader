@@ -21,12 +21,11 @@ hsl(137, 100%, 45%) */
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  overflow-x: hidden;
-  scroll-behavior: initial;
 }
 
 body {
   background-color: var(--main-color);
+  overflow-x: hidden;
 }
 h1 {
   font-weight: 600;
@@ -83,11 +82,12 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 .hero-text-wapper {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 70%;
   transform: translate(-50%, -90%);
 }
 .hero-text-wapper h1 {
@@ -100,6 +100,9 @@ section {
   color: var(--font-own-color);
   text-shadow: 2px 3px 10px hsl(0, 0%, 0%);
   font-size: 1rem;
+}
+.hero-buttons {
+  display: flex;
 }
 .header h1 {
   font-size: 3rem;
@@ -118,6 +121,8 @@ section {
 .login-btn,
 .signup-model-btn,
 .signup-btn:hover {
+  padding: 10px;
+  margin-right: 5px;
   background-color: var(--font-own-color);
   text-align: center;
   color: var(--main-color);
@@ -187,6 +192,12 @@ section {
   .header h1 {
     font-size: 1.3rem;
   }
+  .hero-text-wapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .hero-text-wapper p {
     font-size: 0.7rem;
   }
@@ -195,6 +206,10 @@ section {
 .modal {
   width: 100vw;
   height: 100vh;
+  padding: 0;
+}
+.modal-dialog {
+  overflow: hidden;
 }
 .modal .modal-content {
   align-content: center;
