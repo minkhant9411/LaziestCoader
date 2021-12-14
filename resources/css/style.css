@@ -25,7 +25,8 @@ hsl(137, 100%, 45%) */
     font-size: 20px;
 }
 
-body {
+body,
+html {
     background-color: var(--main-color);
     overflow-x: hidden;
     width: 100%;
